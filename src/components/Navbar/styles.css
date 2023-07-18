@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+/*  font-family: 'Mitr', sans-serif; */
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    height: 100px;
+    width: 100%;
+    background-color: #333;
+}
+.logoContainer{
+    width: 100%;
+}
+
+.buttons{
+    font-size: 30px;
+    padding: 15px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition:  0.5s ease;
+}
+.links:hover {
+    color: blueviolet;
+    transform: translatey(-15px);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.logoimg{
+    height: 100px ;
+}
+.title{
+    padding-left: 15px;
+    font-size: 30px;
+    font-family: 'Mitr', sans-serif;
+}
+.check{
+    transition: 0.5s ease;
+}
+.check:hover{
+    color: green;
+}
