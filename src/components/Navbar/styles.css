@@ -2,53 +2,25 @@
 
 /*  font-family: 'Mitr', sans-serif; */
 
-.navbar{
+.collapse{
     display: flex;
     justify-content: end;
-    height: 100px;
-    width: 100%;
-    background-color: #333;
-}
-.logoContainer{
-    width: 100%;
+    margin-right: 40px;
 }
 
-.buttons{
-    font-size: 30px;
-    padding: 15px;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-}
-
-.links{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    transition:  0.5s ease;
-}
-.links:hover {
-    color: blueviolet;
-    transform: translatey(-15px);
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-}
-.logoimg{
-    height: 100px ;
-}
-.title{
-    padding-left: 15px;
-    font-size: 30px;
+.navbar{
     font-family: 'Mitr', sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: #333;
 }
-.check{
+
+.navbar-brand{
+    font-size: 35px;
+}
+
+.nav-item :hover{
+    color: bisque;
+    transform: scaleY(25px);
     transition: 0.5s ease;
-}
-.check:hover{
-    color: green;
 }

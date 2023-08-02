@@ -1,13 +1,14 @@
 import Navbar from './components/Navbar';
-import Bienvenida from './components/itemListContainer';
+import BannerContainer from './components/itemListContainer';
+import Cards from './components/cards';
 
 function App() {
 
   return (
 <main>
   <Navbar />
-  <Bienvenida proverbio="Hyakubun wa ikken ni shikazu"/>
-  <Bienvenida proverbio='"Ver algo una vez es mejor que escucharlo 100 veces"'/>
+  <BannerContainer />
+  <Cards />
 </main>
   );
 }

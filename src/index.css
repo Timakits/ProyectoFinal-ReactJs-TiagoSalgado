@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&family=Rubik&display=swap');
@@ -10,4 +11,5 @@
 body{
   font-family: 'Noto Sans Thai', sans-serif;
   color: white;
+  background-color: #333;
 }

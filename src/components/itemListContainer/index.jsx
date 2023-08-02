@@ -1,8 +1,14 @@
 import "./styles.css"
+import Banner from "./banner"
 
-const Bienvenida = (props) => {
-    return <h2 className="proverbio">{props.proverbio}</h2>
-}
+const BannerContainer = (props) => {
+    return (
+        <div>
+            <Banner/>
+        </div>
 
 
-export default Bienvenida
+    )}
+
+
+export default BannerContainer

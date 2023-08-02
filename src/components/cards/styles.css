@@ -1,0 +1,33 @@
+.arrow{
+    text-align: center;
+    font-size: 50px;
+    color: bisque;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cardscontainer{
+    padding: 40px;
+    display: flex;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    width: 70%;
+}
+
+.card-img-top{
+    height: 350px;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    
+}
