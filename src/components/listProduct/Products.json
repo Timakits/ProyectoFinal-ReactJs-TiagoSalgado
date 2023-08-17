@@ -7,7 +7,7 @@
         "Frame-color": "Marron",
         "Lens-color": "Verde",
         "Price": 220,
-        "img": "src/assets/img/glasses/1.jpg"
+        "img": "/glasses/1.jpg"
     },
     {
         "id": 2,
@@ -16,7 +16,7 @@
         "Frame-color": "Plata",
         "Lens-color": "Azulado",
         "Price": 350,
-        "img": "src/assets/img/glasses/2.jpg"
+        "img": "/glasses/2.jpg"
     },
     {
         "id": 3,
@@ -25,7 +25,7 @@
         "Frame-color": "Marron",
         "Lens-color": "Gris",
         "Price": 500,
-        "img": "src/assets/img/glasses/3.png"
+        "img": "/glasses/3.png"
     },
     {
         "id": 4,
@@ -34,7 +34,7 @@
         "Frame-color": "Dorado",
         "Lens-color": "Espejo",
         "Price": 350,
-        "img": "src/assets/img/glasses/4.jpg"
+        "img": "/glasses/4.jpg"
     },
     {
         "id": 5,
@@ -43,7 +43,7 @@
         "Frame-color": "Marron",
         "Lens-color": "Gris",
         "Price": 280,
-        "img": "src/assets/img/glasses/5.jpg"
+        "img": "/glasses/5.jpg"
     },
     {
         "id": 6,
@@ -52,7 +52,7 @@
         "Frame-color": "Marron",
         "Lens-color": "Marron",
         "Price": 300,
-        "img": "src/assets/img/glasses/6.jpg"
+        "img": "/glasses/6.jpg"
     },
     {
         "id": 7,
@@ -61,7 +61,7 @@
         "Frame-color": "Marron",
         "Lens-color": "Green",
         "Price": 400,
-        "img": "src/assets/img/glasses/7.jpg"
+        "img": "/glasses/7.jpg"
     },
     {
         "id": 8,
@@ -70,7 +70,7 @@
         "Frame-color": "Plata",
         "Lens-color": "Azulado",
         "Price": 420,
-        "img": "src/assets/img/glasses/8.jpg"
+        "img": "/glasses/8.jpg"
     },
     {
         "id": 9,
@@ -79,7 +79,7 @@
         "Frame-color": "Negro",
         "Lens-color": "Gris oscuro",
         "Price": 320,
-        "img": "src/assets/img/glasses/9.jpg"
+        "img": "/glasses/9.jpg"
     },
     {
         "id": 10,
@@ -88,7 +88,7 @@
         "Frame-color": "Plata",
         "Lens-color": "Verde",
         "Price": 320,
-        "img": "src/assets/img/glasses/10.jpg"
+        "img": "/glasses/10.jpg"
     },
     {
         "id": 11,
@@ -97,7 +97,7 @@
         "Frame-color": "Dorado",
         "Lens-color": "Gris oscuro",
         "Price": 500,
-        "img": "src/assets/img/glasses/11.jpeg"
+        "img": "/glasses/11.jpeg"
     },
     {
         "id": 12,
@@ -106,7 +106,7 @@
         "Frame-color": "Dorado",
         "Lens-color": "Dorado tenue",
         "Price": 390,
-        "img": "src/assets/img/glasses/12.jpg"
+        "img": "/glasses/12.jpg"
     },
     {
         "id": 13,
@@ -115,7 +115,7 @@
         "Frame-color": "Plata",
         "Lens-color": "Espejo",
         "Price": 450,
-        "img": "src/assets/img/glasses/13.jpg"
+        "img": "/glasses/13.jpg"
     },
     {
         "id": 14,
@@ -124,6 +124,6 @@
         "Frame-color": "Marron",
         "Lens-color": "Gris oscuro",
         "Price": 350,
-        "img": "src/assets/img/glasses/14.jpg"
+        "img": "/glasses/14.jpg"
     }
 ]

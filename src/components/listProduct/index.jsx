@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { json } from "react-router-dom";
 import "./styles.css"
+import { Link } from "react-router-dom";
+
 //COMPONENT
 import CardProduct from "../cardProduct";
-import Spinner from "../spinner";
+
 
 //Json
 import Stock from "./Products.json"
@@ -26,8 +27,10 @@ const ListProcduct = () => {
     <div className="card-product">
         {products.map((product) => {
             return(
-                <div>
-                    <CardProduct data={product}/>
+                <div key={product.id}>
+                    <Link to={`/Productos/Detail/${product.id}`} className="Deatil-link">
+                        <CardProduct data={product}/>
+                    </Link>
                 </div>
             )
         })}

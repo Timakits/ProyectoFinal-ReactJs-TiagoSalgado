@@ -25,7 +25,7 @@ const CategoryPage = () => {
         <div className='card-product-category'>
             {filteredBrand.map( (marca) => {
                 return(
-                    <div>
+                    <div key={marca.id}>
                         <CardProduct data = {marca}/>
                     </div>
                 )
