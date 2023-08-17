@@ -22,12 +22,25 @@
 
 .navbar-brand{
     font-size: 35px;
-
 }
 
+.nav-link{
+    color: white;
+}
 .nav-item :hover{
     color: bisque;
     transform: scaleY(25px);
     transition: 0.5s ease;
 }
+.link :hover{
+    color: bisque;
+    transform: scaleY(25px);
+    transition: 0.5s ease;
+}
 
+.link{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+}

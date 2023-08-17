@@ -5,14 +5,14 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import { Link } from "react-router-dom";
 //COMPONENTS
 
 import Spinner from "../spinner";
 
 //IMAGENES
 
-import id1 from "../../assets/img/glasses/1.jpg"
+
 
 
 const CardProduct = ({data}) =>   {
@@ -36,8 +36,8 @@ const CardProduct = ({data}) =>   {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">+ Detalles</Button>
-                <Button size="small">Comprar <i class="fa-solid fa-cart-shopping"></i></Button>
+                <Link to={`/Productos/Detail/${data.id}`}><Button size="small">+ Detalles</Button></Link>
+                <Link to={`/Productos/Detail/${data.id}`}><Button size="small">Comprar <i class="fa-solid fa-cart-shopping"></i></Button></Link>
             </CardActions>
         </Card>
     );

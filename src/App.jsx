@@ -11,11 +11,13 @@ import Contacto from "./pages/Contacto/Contacto";
 import Cart from "./pages/Cart/Cart";
 import Home from "./pages/home";
 import CategoryPage from "./pages/categoryPage";
+import DetailPage from "./pages/detailPage";
 
 function App() {
   return (
     <main>
       <Router>
+          <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Productos" element={<Productos />}/>
@@ -23,7 +25,10 @@ function App() {
           <Route path="/Contacto" element={<Contacto />}/>
           <Route path="/Cart" element={<Cart />}/>
           <Route path="/Productos/:brandCategory" element={<CategoryPage />}/>
+          <Route path="/Productos/Detail/:id" element={<DetailPage />}/>
+
         </Routes>
+          <Footer/>
       </Router>
     </main>
   );

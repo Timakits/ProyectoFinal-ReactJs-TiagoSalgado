@@ -4,8 +4,7 @@ import Navbar from "../../components/Navbar";
 import Footer from '../../components/footer'
 const Contacto = () => {
     return (<div>
-        <Navbar />
-        <Footer />
+        Contacto
     </div>
     )
 };

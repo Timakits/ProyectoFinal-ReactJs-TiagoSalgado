@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import CardProduct from '../../components/cardProduct'
-
-
+import "./styles.css"
 import Stock from "../../components/listProduct/Products.json"
+
+
 
 const CategoryPage = () => {
     const [products, setProducts] = useState([]);
@@ -11,7 +12,7 @@ const CategoryPage = () => {
 
     
     let filteredBrand = products.filter( (marca) => {
-        marca.brand === brandCategory
+        return marca.brand === brandCategory
     })
     useEffect( () => {
         setTimeout( () => {
@@ -21,12 +22,11 @@ const CategoryPage = () => {
     
     
     return (
-        <div>
+        <div className='card-product-category'>
             {filteredBrand.map( (marca) => {
                 return(
                     <div>
-                        
-                        <CardProduct data ={marca}/>
+                        <CardProduct data = {marca}/>
                     </div>
                 )
             })}

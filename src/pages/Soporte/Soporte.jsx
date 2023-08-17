@@ -5,8 +5,7 @@ import Footer from '../../components/footer'
 
 const Soporte = () => {
     return ( <div>
-        <Navbar />
-        <Footer />
+        Soporte
     </div>
     )
 };

@@ -12,11 +12,8 @@ const Home = () => {
 
 return (
     <div>
-        <Navbar/>
         <BannerContainer />
         <Cards />
-        <Footer/>
-
     </div>
 )
 }
