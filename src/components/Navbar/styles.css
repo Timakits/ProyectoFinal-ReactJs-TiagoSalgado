@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,300&display=swap');
 
-/*  font-family: 'Mitr', sans-serif; */
+/*  font-family: 'Mitr', sans-serif; 
+    font-family: 'Kanit', sans-serif;*/
 
 .collapse{
     display: flex;
@@ -9,14 +11,18 @@
 }
 
 .navbar{
-    font-family: 'Mitr', sans-serif;
     font-size: 25px;
     color: white;
     background-color: #333;
 }
+.category{
+    background-color: rgb(152, 116, 72);
+    text-decoration: none;
+}
 
 .navbar-brand{
     font-size: 35px;
+
 }
 
 .nav-item :hover{
@@ -24,3 +30,4 @@
     transform: scaleY(25px);
     transition: 0.5s ease;
 }
+

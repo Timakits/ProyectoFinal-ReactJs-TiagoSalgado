@@ -1,4 +1,12 @@
-.arrow{
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arrow {
     text-align: center;
     font-size: 50px;
     color: bisque;
@@ -6,28 +14,93 @@
     margin-bottom: 15px;
 }
 
-.cardscontainer{
+.cardscontainer {
     padding: 40px;
     display: flex;
 }
 
-.text{
+.text {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-.card{
+.card {
     width: 70%;
 }
 
-.card-img-top{
+.card-link {
+    text-decoration: none;
+    text-align: end;
+    color: bisque;
+    height: 10px;
+}
+
+
+.card-img-top {
     height: 350px;
 }
 
-.col{
+.col {
     display: flex;
     justify-content: center;
     padding: 5px;
-    
+
+}
+
+.container {
+    padding-bottom: 150px;
+    max-width: 120%;
+    padding: 0px 0px;
+    background-color: #181a1b;
+}
+
+.textContainer {
+    background-color: #181a1b;
+    padding: 0px 0px;
+}
+
+.text1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    font-style: oblique;
+    font-family: 'Kanit', sans-serif;
+}
+
+.text2 {
+    margin-top: 50px;
+    font-size: 170%;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    color: bisque;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.productBtn {
+    margin-top: 50px;
+    font-size: 150%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    color: black;
+    background-color: bisque;
+    border: solid 1px black;
+}
+
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
 }

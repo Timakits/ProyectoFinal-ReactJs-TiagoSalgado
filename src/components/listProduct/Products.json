@@ -1,0 +1,129 @@
+
+[ 
+    {
+        "id": 1,
+        "brand": "Ray-Ban",
+        "model": "Round",
+        "Frame-color": "Marron",
+        "Lens-color": "Verde",
+        "Price": 220,
+        "img": "src/assets/img/glasses/1.jpg"
+    },
+    {
+        "id": 2,
+        "brand": "Oakley",
+        "model": "WayFarer",
+        "Frame-color": "Plata",
+        "Lens-color": "Azulado",
+        "Price": 350,
+        "img": "src/assets/img/glasses/2.jpg"
+    },
+    {
+        "id": 3,
+        "brand": "Gucci",
+        "model": "Clubmaster",
+        "Frame-color": "Marron",
+        "Lens-color": "Gris",
+        "Price": 500,
+        "img": "src/assets/img/glasses/3.png"
+    },
+    {
+        "id": 4,
+        "brand": "Prada",
+        "model": "Aviator",
+        "Frame-color": "Dorado",
+        "Lens-color": "Espejo",
+        "Price": 350,
+        "img": "src/assets/img/glasses/4.jpg"
+    },
+    {
+        "id": 5,
+        "brand": "Ray-Ban",
+        "model": "Clubmaster",
+        "Frame-color": "Marron",
+        "Lens-color": "Gris",
+        "Price": 280,
+        "img": "src/assets/img/glasses/5.jpg"
+    },
+    {
+        "id": 6,
+        "brand": "Prada",
+        "model": "Clubmaster",
+        "Frame-color": "Marron",
+        "Lens-color": "Marron",
+        "Price": 300,
+        "img": "src/assets/img/glasses/6.jpg"
+    },
+    {
+        "id": 7,
+        "brand": "Oakley",
+        "model": "Round",
+        "Frame-color": "Marron",
+        "Lens-color": "Green",
+        "Price": 400,
+        "img": "src/assets/img/glasses/7.jpg"
+    },
+    {
+        "id": 8,
+        "brand": "Ray-Ban",
+        "model": "Aviator",
+        "Frame-color": "Plata",
+        "Lens-color": "Azulado",
+        "Price": 420,
+        "img": "src/assets/img/glasses/8.jpg"
+    },
+    {
+        "id": 9,
+        "brand": "Ray-Ban",
+        "model": "Cat-eye",
+        "Frame-color": "Negro",
+        "Lens-color": "Gris oscuro",
+        "Price": 320,
+        "img": "src/assets/img/glasses/9.jpg"
+    },
+    {
+        "id": 10,
+        "brand": "Ray-Ban",
+        "model": "Cat-eye",
+        "Frame-color": "Plata",
+        "Lens-color": "Verde",
+        "Price": 320,
+        "img": "src/assets/img/glasses/10.jpg"
+    },
+    {
+        "id": 11,
+        "brand": "Gucci",
+        "model": "Aviator",
+        "Frame-color": "Dorado",
+        "Lens-color": "Gris oscuro",
+        "Price": 500,
+        "img": "src/assets/img/glasses/11.jpeg"
+    },
+    {
+        "id": 12,
+        "brand": "Oakley",
+        "model": "Aviator",
+        "Frame-color": "Dorado",
+        "Lens-color": "Dorado tenue",
+        "Price": 390,
+        "img": "src/assets/img/glasses/12.jpg"
+    },
+    {
+        "id": 13,
+        "brand": "Prada",
+        "model": "Aviator",
+        "Frame-color": "Plata",
+        "Lens-color": "Espejo",
+        "Price": 450,
+        "img": "src/assets/img/glasses/13.jpg"
+    },
+    {
+        "id": 14,
+        "brand": "Prada",
+        "model": "Round",
+        "Frame-color": "Marron",
+        "Lens-color": "Gris oscuro",
+        "Price": 350,
+        "img": "src/assets/img/glasses/14.jpg"
+    }
+]

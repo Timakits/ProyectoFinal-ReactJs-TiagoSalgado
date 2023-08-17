@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+
 .bannerContainer{
     height: 700px;
     width: 100%;
     background-image: url(../../../assets/img/Banner.jpg) ;
     background-size: cover ;
     background-attachment: fixed;
-    font-size: 20px;
 }
 
 .proverbio{
@@ -14,20 +15,28 @@
     margin: 20px;
     padding: 15px;
     color: rgb(255, 255, 255);
-    border: solid 2px black;
+    border: solid 2px #181a1b;
     font-size: 40px;
-    width: 35%;
+    width: 45%;
     text-align: center;
 }
 
 h2{
     font-size: 35px;
     font-style: oblique;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
 }
 
 .frase{
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 65%;
     color: bisque;
+    font-family: 'Kanit', sans-serif;
+}
+
+.frase2{
+    font-size: 65%;
 }
