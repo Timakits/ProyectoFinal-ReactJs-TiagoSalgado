@@ -4,7 +4,7 @@ import "./styles.css"
 import CardProduct from '../../components/cardProduct'
 import Stock from "../../components/listProduct/Products.json"
 
-const DetailPage = () => {
+const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null); 
 
     let { id } = useParams();
@@ -28,4 +28,4 @@ const DetailPage = () => {
     );
 }
 
-export default DetailPage;
+export default ItemDetailContainer;

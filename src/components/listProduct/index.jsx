@@ -19,7 +19,7 @@ const ListProcduct = () => {
         setTimeout( () => {
             setProducts(Stock)
         }, 1000)
-    }, []);
+    }, [products]);
 
 
 
@@ -28,8 +28,8 @@ const ListProcduct = () => {
         {products.map((product) => {
             return(
                 <div key={product.id}>
-                    <Link to={`/Productos/Detail/${product.id}`} className="Deatil-link">
-                        <CardProduct data={product}/>
+                    <Link to={`/item/${product.id}`} className="Deatil-link">
+                        {product ? <CardProduct data={product}/> : <p>Cargando...</p>}
                     </Link>
                 </div>
             )

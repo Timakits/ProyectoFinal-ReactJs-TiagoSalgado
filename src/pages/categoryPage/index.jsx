@@ -8,11 +8,11 @@ import Stock from "../../components/listProduct/Products.json"
 
 const CategoryPage = () => {
     const [products, setProducts] = useState([]);
-    let {brandCategory} = useParams();
+    let {CategoryId} = useParams();
 
     
     let filteredBrand = products.filter( (marca) => {
-        return marca.brand === brandCategory
+        return marca.brand === CategoryId
     })
     useEffect( () => {
         setTimeout( () => {

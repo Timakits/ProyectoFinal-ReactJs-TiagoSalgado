@@ -23,12 +23,11 @@ function Navbar() {
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <Link to="/Productos" style={{ textDecoration: 'none' }}className="link"><li className="category">Todos</li></Link>
-                            <Link to="/Productos/Ray-Ban" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Ray-Ban</li></Link>
-                            <Link to="/Productos/Oakley" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Oakley</li></Link>
-                            <Link to="/Productos/Gucci" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Gucci</li></Link>
-                            <Link to="/Productos/Prada" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Prada</li></Link>
-                            <Link to="/Productos/Versace" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Versace</li></Link>
+                            <Link to="/Category/Ray-Ban" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Ray-Ban</li></Link>
+                            <Link to="/Category/Oakley" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Oakley</li></Link>
+                            <Link to="/Category/Gucci" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Gucci</li></Link>
+                            <Link to="/Category/Prada" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Prada</li></Link>
+                            <Link to="/Category/Versace" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Versace</li></Link>
                         </ul>
                     </li>
                     <Link to="/Soporte" style={{ textDecoration: 'none' }} className="link">

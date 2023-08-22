@@ -98,11 +98,8 @@ const Cards = () => {
                     <div className="col-12 textContainer">
                         <h1 className="text1"> Desde los estilos clásicos y atemporales hasta las últimas tendencias de moda, tenemos lentes que se ajustan a cada gusto y preferencia.</h1>
                     </div>
-                    <div className="col-6 CTACont"><h2 className="text2">!Asi que no dudes en echarle un ojo a nuestros productos¡</h2></div>
-                    <div className="col-6 btnContainer">
-                        <Link to="/Productos">
-                            <button type="button" class="btn btn-outline-secondary productBtn">Productos <i class="fa-solid fa-cart-shopping"></i></button>
-                        </Link>
+                    <div className="col-12 CTACont">
+                        <h2 className="text2">!Asi que no dudes en echarle un ojo a nuestros productos¡</h2>
                     </div>
                 </div>
             </div>

@@ -58,6 +58,8 @@
 .textContainer {
     background-color: #181a1b;
     padding: 0px 0px;
+    display: flex;
+    text-align: center;
 }
 
 .text1 {
@@ -77,25 +79,9 @@
     padding-bottom: 30px;
     margin-left: 20px;
     color: bisque;
-}
-
-.btnContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
-}
-
-.productBtn {
-    margin-top: 50px;
-    font-size: 150%;
     text-align: center;
-    padding: 10px;
-    box-shadow: 0 0 10px black;
-    color: black;
-    background-color: bisque;
-    border: solid 1px black;
 }
+
 
 
 .footer {
