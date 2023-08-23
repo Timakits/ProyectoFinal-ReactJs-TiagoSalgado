@@ -8,7 +8,7 @@ import Stock from "../../components/listProduct/Products.json"
 
 const CategoryPage = () => {
     const [products, setProducts] = useState([]);
-    let {CategoryId} = useParams();
+
 
     
     let filteredBrand = products.filter( (marca) => {
