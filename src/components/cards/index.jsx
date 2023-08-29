@@ -29,7 +29,7 @@ const Cards = () => {
                         <div class="card-body">
                             <h5 class="card-title">Lentes aviador</h5>
                             <p class="card-text">Lentes aviador con vidrio gris oscuro y armazon dorado. Ideal para reuniones elegantes</p>
-                            <h6 className="card-link"><a href="#" className="card-link">Ver mas 🕶</a></h6>
+                            <h6 className="card-link"><a href="#ver-mas-link" className="card-link">Ver mas 🕶</a></h6>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const Cards = () => {
                         <div class="card-body">
                             <h5 class="card-title">Lentes aviador</h5>
                             <p class="card-text">Lentes aviador con vidrio rosado y armazon dorado. Perfecto para encuentros casuales</p>
-                            <h6 className="card-link"><a href="#" className="card-link">Ver mas 🕶</a></h6>
+                            <h6 className="card-link"><a href="#ver-mas-link" className="card-link">Ver mas 🕶</a></h6>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const Cards = () => {
                         <div class="card-body">
                             <h5 class="card-title">Lentes cat eye</h5>
                             <p class="card-text">Lentes con armazon negro ideal para una calida y relajada lectura</p>
-                            <h6 className="card-link"><a href="#" className="card-link">Ver mas 🕶</a></h6>
+                            <h6 className="card-link"><a href="#ver-mas-link" className="card-link">Ver mas 🕶</a></h6>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const Cards = () => {
                         <div class="card-body">
                             <h5 class="card-title">Lentes aviador</h5>
                             <p class="card-text">Lentes aviador con vidrio azulado y armazon plateada. La mejor opcion para poder dar una primera impresion</p>
-                            <h6 className="card-link"><a href="#" className="card-link">Ver mas 🕶</a></h6>
+                            <h6 className="card-link"><a href="#ver-mas-link" className="card-link">Ver mas 🕶</a></h6>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Cards = () => {
                         <div class="card-body">
                             <h5 class="card-title">Lentes aviador</h5>
                             <p class="card-text">Lentes aviador con vidrio gris oscuro y armazon negro. Un clasico que nunca falla</p>
-                            <h6 className="card-link"><a href="#" className="card-link">Ver mas 🕶</a></h6>
+                            <h6 className="card-link"><a href="#ver-mas-link" className="card-link">Ver mas 🕶</a></h6>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const Cards = () => {
                         <div class="card-body">
                             <h5 class="card-title">Lentes XR</h5>
                             <p class="card-text">Vidrio violeta con armazon negro resistente. Preparados para cualquier situacion</p>
-                            <h6 className="card-link"><a href="#" className="card-link">Ver mas 🕶</a></h6>
+                            <h6 className="card-link"><a href="#ver-mas-link" className="card-link">Ver mas 🕶</a></h6>
                         </div>
                     </div>
                 </div>

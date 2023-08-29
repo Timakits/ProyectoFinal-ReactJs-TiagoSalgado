@@ -34,6 +34,7 @@
     text-align: end;
     color: bisque;
     height: 10px;
+    scroll-behavior: smooth;
 }
 
 
@@ -90,3 +91,4 @@
     justify-content: center;
 
 }
+

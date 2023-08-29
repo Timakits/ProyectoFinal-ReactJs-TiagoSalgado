@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import "./styles.css"
+//COMPONENETS
 import CardProduct from '../../components/cardProduct'
-import Stock from "../../components/listProduct/Products.json"
+import CardDetail from '../../components/cardDetail'
+
+import Stock from "../Productos/Products.json"
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null); 
 
-    let { id } = useParams();
+    let { Id } = useParams();
 
     useEffect(() => {
-        const selectedProduct = Stock.find(item => id === id);
-
+        const selectedProduct = Stock.find(item => item.id == Id);
         if (selectedProduct) {
             setTimeout(() => {
                 setProduct(selectedProduct);
@@ -19,11 +21,11 @@ const ItemDetailContainer = () => {
         } else {
             console.log("Producto no encontrado");
         }
-    }, [id]);
+    }, [Id]);
 
     return (
         <div className='DetailProduct'>
-            {product ? <CardProduct data={product} /> : <p>Cargando...</p>}
+            {product ? <CardDetail data={product} /> : <p>Cargando...</p>}
         </div>
     );
 }

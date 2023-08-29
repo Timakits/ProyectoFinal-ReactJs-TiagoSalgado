@@ -9,7 +9,6 @@ import ItemListContainer from "./pages/Productos/itemListContainer";
 import Soporte from "./pages/Soporte/Soporte";
 import Contacto from "./pages/Contacto/Contacto";
 import Cart from "./pages/Cart/Cart";
-import CategoryPage from "./pages/categoryPage";
 import ItemDetailContainer from "./pages/detailPage"
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
           <Route path="/Contacto" element={<Contacto />}/>
           <Route path="/Cart" element={<Cart />}/>
           <Route path="/Category/:CategoryId" element={<ItemListContainer />}/>
-          <Route path="/item/:id" element={<ItemDetailContainer />}/>
+          <Route path="/item/:Id" element={<ItemDetailContainer />}/>
 
         </Routes>
           <Footer/>

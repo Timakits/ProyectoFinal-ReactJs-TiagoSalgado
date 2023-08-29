@@ -30,17 +30,17 @@ function Navbar() {
                             <Link to="/Category/Versace" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Versace</li></Link>
                         </ul>
                     </li>
-                    <Link to="/Soporte" style={{ textDecoration: 'none' }} className="link">
+                    <Link to="/Soporte" style={{ textDecoration: 'none', color: 'white' }} className="link">
                         <li class="nav-item">
                             Soporte
                         </li>
                     </Link>
-                    <Link to="/Contacto" style={{ textDecoration: 'none' }} className="link">
+                    <Link to="/Contacto" style={{ textDecoration: 'none', color: 'white' }} className="link">
                         <li class="nav-item">
                             Contacto
                         </li>
                     </Link>
-                    <Link to="/Cart" style={{ textDecoration: 'none' }} className="link">
+                    <Link to="/Cart" style={{ textDecoration: 'none', color: 'white' }} className="link">
                         <li class="nav-item">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </li>
