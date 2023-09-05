@@ -2,8 +2,7 @@ import "./styles.css";
 import Logoimg from "./logo";
 
 import { Link } from "react-router-dom";
-var num = 3;
-
+import CartWidget from "../cartWidget";
 
 
 function Navbar() {
@@ -42,7 +41,7 @@ function Navbar() {
                     </Link>
                     <Link to="/Cart" style={{ textDecoration: 'none', color: 'white' }} className="link">
                         <li class="nav-item">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <CartWidget />
                         </li>
                     </Link>
                 </ul>

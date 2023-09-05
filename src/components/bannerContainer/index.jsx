@@ -1,4 +1,4 @@
-import "./styles.css"
+
 import Banner from "./banner"
 
 const BannerContainer = (props) => {

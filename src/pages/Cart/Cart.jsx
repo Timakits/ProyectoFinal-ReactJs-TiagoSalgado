@@ -1,13 +1,30 @@
+import React, { useState } from "react";
+import "./styles.css";
 
-import React from 'react'
+//MUI
+import { IconButton } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
 
-import Navbar from "../../components/Navbar";
-import Footer from '../../components/footer'
+//CMPS
+import CardCart from "../../components/cardCart";
+
 const Cart = () => {
-    return (<div>
-        Cart
+  
+
+  return (
+    <>
+    <div className="cartContainer">
+      <div className="listCart">
+        <div className="btns">
+          <IconButton>
+           Vaciar carrito <DeleteIcon />
+          </IconButton>
+        </div>
+        <CardCart/>
+      </div>
     </div>
-    );
+    </>
+  );
 };
 
-export default Cart
+export default Cart;

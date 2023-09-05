@@ -1,0 +1,27 @@
+.soporte-container{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    max-width: 50%;
+    font-size: 25px;
+}
+ul{
+    max-width: 50%;
+    font-size: 25px;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: bisque;
+}
+h4{
+    margin-top: 5%;
+    text-align: center;
+}
+strong{
+    color: bisque;
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
 
 .bannerContainer{
+    display: block;
     height: 700px;
     width: 100%;
     background-image: url(../../../assets/img/Banner.jpg) ;
@@ -39,4 +40,14 @@ h2{
 
 .frase2{
     font-size: 65%;
+}
+.fa-chevron-down{
+    margin-top: 20px;
+    font-size: 250%;
+    color: bisque;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

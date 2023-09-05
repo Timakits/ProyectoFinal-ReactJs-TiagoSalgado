@@ -10,11 +10,13 @@ import Soporte from "./pages/Soporte/Soporte";
 import Contacto from "./pages/Contacto/Contacto";
 import Cart from "./pages/Cart/Cart";
 import ItemDetailContainer from "./pages/detailPage"
+import { CartProvider } from "./context/cartContext"; 
 
 function App() {
   return (
     <main>
       <Router>
+        <CartProvider>
           <Navbar/>
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="/item/:Id" element={<ItemDetailContainer />}/>
 
         </Routes>
+        </CartProvider>
           <Footer/>
       </Router>
     </main>

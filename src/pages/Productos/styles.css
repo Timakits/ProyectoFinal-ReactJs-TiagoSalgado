@@ -1,9 +1,11 @@
 .card-product{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
     padding: 50px;
     height: 100%;
+    max-width: 100%;
+}
+.category-product{
+    padding: 50px;
+    height: 100vh;
     max-width: 100%;
 }
 

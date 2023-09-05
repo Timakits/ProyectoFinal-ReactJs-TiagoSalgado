@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CardProduct from '../cardProduct'
-
+import "./styles.css"
 
 const ItemList = ({products}) => {
   return (
-    <div>
+    <>
+    <div className='card-container'>
               {products.map((product) => {
             return(
                 <div key={product.id}>
@@ -16,6 +17,7 @@ const ItemList = ({products}) => {
             )
         })}
     </div>
+  </>
   )
 }
 
