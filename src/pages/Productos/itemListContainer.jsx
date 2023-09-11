@@ -9,22 +9,51 @@ import ItemList from "../../components/itemList";
 //Json
 import Stock from "./Products.json";
 
+//Firebase
+import {
+  collection,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
+import { db } from "../../services/firebase/firebaseConfig";
+
 const ItemListContainer = () => {
   let { CategoryId } = useParams();
   const [products, setProducts] = useState([]);
   const [isLoading, setisLoading] = useState(false);
 
   useEffect(() => {
-    let filterProducts;
-    if (!CategoryId) {
-      filterProducts = Stock;
-    } else {
-      filterProducts = Stock.filter((element) => element.brand === CategoryId);
-    }
-    setProducts(filterProducts);
-    setisLoading(true);
+    const getProducts = async () => {
+      //firebase call
+      const q = query(collection(db, "VisualCheck-Products"));
+      const docs = [];
+      const querySnapshot = await getDocs(q);
+      querySnapshot.forEach((doc) => {
+        docs.push({ ...doc.data(), id: doc.id });
+      });
+      setProducts(docs);
+
+      //filtrado de productos
+      let filterProducts;
+      if (!CategoryId) {
+        filterProducts = docs;
+        setisLoading(true);
+      } else {
+        filterProducts = docs.filter(
+          (element) => element.brand === CategoryId
+          );
+          setisLoading(true);
+        }
+        setProducts(filterProducts);
+      };
+      getProducts();
+      
   }, [CategoryId]);
 
+
+
+  ;
   return (
     <div className="productsContainer">
       {!CategoryId && <BannerContainer />}

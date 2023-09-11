@@ -12,10 +12,10 @@ if(!isInCart(item.id)){
     setCart(prev => [...prev, {...item, counter}])
     
 }else{
-    alert("el producto ya fue agregado") 
+    Swal.fire('El producto ya fue agregado') 
 }
 }
-console.log(cart)
+
 const isInCart = (itemId) => {
     return cart.some(prod => prod.id === itemId)
 }
@@ -29,10 +29,15 @@ const clearCart = () => {
     setCart([])
 }
 
+const total = () => {
+return cart.reduce( (total, product) => total + (product.price * product.counter), 0)
+}
+
+
 
 
   return (
-    <CartContext.Provider value={{clearCart, addItem, removeItem, cart}}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{clearCart, addItem, removeItem, isInCart ,cart, total}}>{children}</CartContext.Provider>
   )
 }
 

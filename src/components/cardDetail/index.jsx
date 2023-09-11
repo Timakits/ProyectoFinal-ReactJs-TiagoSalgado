@@ -10,20 +10,30 @@ import { useState } from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cartContext";
+import Swal from "sweetalert2";
 
 
 const CardDetail = ({ data }) => {
   const [counter, setCounter] = useState(1);
+  const [add, setAdd] = useState(false)
 
-  
+
+
   const {addItem} = useContext(CartContext) 
   const id = data.id
   const model = data.model
   const brand = data.brand
   const price = data.Price
+  const img = data.img
+
+
 
   const onClickCounterM = () => {
-    setCounter(counter + 1);
+    if(data.cant !== counter){
+      setCounter(counter + 1);
+    }else{
+      Swal.fire('No hay mas stock disponible')
+    }
   };
 
   const onClickCounterL = () => {
@@ -34,13 +44,14 @@ const CardDetail = ({ data }) => {
   };
   const onClickCart = () => {
     const item = {
-      id, model, brand, price
+      id, model, brand, price, img
     }
     addItem(item, counter)
+    setAdd(true)
   };
 
   return (
-    <Card sx={{ display: "flex" }}>
+    <Card sx={{ display: "flex", maxHeight:"80vh", maxWidth:"100vh"}}>
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CardContent sx={{ flex: "1 0 auto" }} className="cardContent">
           <Box>
@@ -69,7 +80,7 @@ const CardDetail = ({ data }) => {
           <div className="compra">
             <h2 className="Precio">{data.Price}$</h2>
 
-            {counter >= 0 ? <div className="btns">
+            {  !add ? <div className="btns">
               <Button
                 variant="outlined"
                 color="error"

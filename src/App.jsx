@@ -10,6 +10,7 @@ import Soporte from "./pages/Soporte/Soporte";
 import Contacto from "./pages/Contacto/Contacto";
 import Cart from "./pages/Cart/Cart";
 import ItemDetailContainer from "./pages/detailPage"
+import CheackoutPage from "./pages/checkoutPage";
 import { CartProvider } from "./context/cartContext"; 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <Route path="/Cart" element={<Cart />}/>
           <Route path="/Category/:CategoryId" element={<ItemListContainer />}/>
           <Route path="/item/:Id" element={<ItemDetailContainer />}/>
-
+          <Route path="/Checkout" element={<CheackoutPage />}/>s
         </Routes>
         </CartProvider>
           <Footer/>

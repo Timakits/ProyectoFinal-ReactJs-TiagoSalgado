@@ -2,12 +2,38 @@
     height: 85vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .listCart{
-    margin-top: 5%;
     border-radius: 10px ;
     background-color: #1B1E1F;
     height: 70vh;
     width: 50%;
+    overflow: auto;
+
+}
+
+.cards{
+    overflow: auto;
+}
+
+.cartAlert{
+margin-left: 5%;
+margin-top: 5%;
+}
+
+.linkbutton{
+    margin-left: 5%;
+    font-size: 140%;
+    border-radius: 5px 2px;
+    background-color: aliceblue;
+    color: bisque;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    color: bisque;
 }
