@@ -6,7 +6,7 @@ import CardProduct from "../../components/cardProduct";
 import CardDetail from "../../components/cardDetail";
 
 //Firebase
-import { collection, query, where, getDocs } from "firebase/firestore";
+import { collection, query,  getDocs } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
 
 const ItemDetailContainer = () => {
