@@ -1,37 +1,143 @@
-.contador{
-    display: inline;
-    font-size: 20px;
-    padding: 15px;
-    padding-top: 5%;
+.contador {
+  display: inline;
+  font-size: 20px;
+  padding: 15px;
+  padding-top: 5%;
 }
 
-.cardContent{
-    height: 90%;
-    width: 100%;
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardMedia {
+  max-width: 100%;
+}
+.Name {
+  font-size: 50px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 50%;
+}
+.cartBtn {
+    padding: 10px;
+}
+.Precio {
+  color: bisque;
+}
+
+.img {
+  height: 500px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+  .cardMedia {
+    max-width: 120%;
+    max-height: 20%;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .Name {
+    font-size: 100%;
+  }
+  .detalle {
+    font-size: 100%;
     display: flex;
+  }
+  .Precio {
+    font-size: 150%;
+  }
+  .btns {
     flex-direction: column;
-}
-
-.cardMedia{
-    max-width: 75vh;
-    max-height: 100%;
-}
-.Name{
-    font-size: 50px;
-}
-.compra{
-    margin-top: 100%;
-}
-.btns{
+  }
+  .purchseBtns {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    max-height: 50%;
+    flex-direction: column;
+  }
 }
-.cartBtn{
-    margin-left: 10px;
+@media only screen and (min-width: 575px) and (max-width: 1199px) {
+  .cardMedia {
+    max-width: 50%;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .Name {
+    font-size: 170%;
+  }
+  .detalle {
+    font-size: 100%;
+    display: flex;
+  }
+  .Precio {
+    font-size: 150%;
+  }
+  .btns {
+    flex-direction: column;
+  }
+  .purchseBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardMedia {
+    width: 100%;
+  }
 }
-.Precio{
-    color: bisque;
+@media only screen and (min-width: 1200px) {
+  .cardMedia {
+    max-width: 50%;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .Name {
+    font-size: 400%;
+  }
+  .detalle {
+    font-size: 200%;
+    display: flex;
+  }
+  .Precio {
+    font-size: 400%;
+  }
+  .btns {
+    flex-direction: column;
+  }
+  .purchseBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1630px){
+    .purchseBtns {
+        flex-direction: row;
+        margin-top: 30%;
+      }
+      .counterContainer{
+        margin-right: 10%;
+      }
+    
 }

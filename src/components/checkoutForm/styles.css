@@ -14,3 +14,7 @@
 .TextField {
     width: 40vh;
 }
+
+.errorAlert{
+    color: red;
+}

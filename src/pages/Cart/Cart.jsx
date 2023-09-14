@@ -21,8 +21,8 @@ const Cart = () => {
     <>
       <div className="cartContainer">
         <div className="btns">
-          <IconButton>
-            <h3 onClick={clearCart}>
+          <IconButton onClick={clearCart}>
+            <h3>
               Vaciar carrito <DeleteIcon />
             </h3>
           </IconButton>
@@ -41,8 +41,8 @@ const Cart = () => {
         </div>
         {!cart.length == 0 ? (
           <>
-          <div className="total">Total en el carrito: ${total()}</div>
-          <div className="btnCheack"><Link to='/Checkout'>Checkout</Link></div>
+          <div className="total"><h3>Total en el carrito: <span className="number"> ${total()}</span></h3></div>
+          <div className="btnCheack"><Link to='/Checkout' style={{textDecoration:"none", color:"bisque", margin:20}}>Finalizar Compra</Link></div>
           </>
         ) : null}
       </div>

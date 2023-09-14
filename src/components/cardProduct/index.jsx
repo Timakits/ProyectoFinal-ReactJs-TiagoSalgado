@@ -19,7 +19,7 @@ const CardProduct = ({data}) =>   {
 
     
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 320 }}>
             <CardMedia
                 component="img"
                 alt={data.brand}

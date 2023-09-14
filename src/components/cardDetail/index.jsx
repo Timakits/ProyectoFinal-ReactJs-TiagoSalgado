@@ -13,121 +13,136 @@ import { CartContext } from "../../context/cartContext";
 import Swal from "sweetalert2";
 
 
+
 const CardDetail = ({ data }) => {
   const [counter, setCounter] = useState(1);
-  const [add, setAdd] = useState(false)
+  const [add, setAdd] = useState(false);
 
-
-
-  const {addItem} = useContext(CartContext) 
-  const id = data.id
-  const model = data.model
-  const brand = data.brand
-  const price = data.Price
-  const img = data.img
-
-
+  const { addItem } = useContext(CartContext);
+  const id = data.id;
+  const model = data.model;
+  const brand = data.brand;
+  const price = data.Price;
+  const img = data.img;
 
   const onClickCounterM = () => {
-    if(data.cant !== counter){
+    if (data.cant !== counter) {
       setCounter(counter + 1);
-    }else{
-      Swal.fire('No hay mas stock disponible')
+    } else {
+      Swal.fire("No hay mas stock disponible");
     }
   };
 
   const onClickCounterL = () => {
     if (counter != 1) {
       setCounter(counter - 1);
-
     }
   };
   const onClickCart = () => {
     const item = {
-      id, model, brand, price, img
-    }
-    addItem(item, counter)
-    setAdd(true)
+      id,
+      model,
+      brand,
+      price,
+      img,
+    };
+    addItem(item, counter);
+    setAdd(true);
   };
 
   return (
-    <Card sx={{ display: "flex", maxHeight:"80vh", maxWidth:"100vh"}}>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
-        <CardContent sx={{ flex: "1 0 auto" }} className="cardContent">
-          <Box>
-            <Typography component="div" variant="h5">
-              <h2 className="Name">
-                {data.model} {data.brand}
-              </h2>
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-              sx={{ paddingLeft: "15px" }}
-            >
-              Color de armazon: {data.FrameColor}
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-              sx={{ paddingLeft: "15px" }}
-            >
-              Color de lente: {data.LensColor}
-            </Typography>
-          </Box>
-          <div className="compra">
-            <h2 className="Precio">{data.Price}$</h2>
+    <Card
+      className="card"
+      sx={{
+        display: "flex",
+        maxHeight: "100%",
+        maxWidth: "95%",
+        flexDirection: "column",
+      }}
+    >
+      <div className="cardContainer">
+        <CardMedia
+          component="img"
+          image={data.img}
+          alt={data.brand}
+          className="cardMedia"
+        />
+        <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <CardContent sx={{ flex: "1 0 auto" }} className="cardContent">
+            <Box>
+              <Typography component="div" variant="h5">
+                <h2 className="Name">
+                  {data.model} {data.brand}
+                </h2>
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                <h3 className="detalle">Color de armazon: {data.FrameColor}</h3>
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                <h3 className="detalle">Color de lente: {data.LensColor}</h3>
+              </Typography>
+            </Box>
+            <div className="compra">
+              <h2 className="Precio">{data.Price}$</h2>
 
-            {  !add ? <div className="btns">
-              <Button
-                variant="outlined"
-                color="error"
-                className="minus"
-                onClick={onClickCounterL}
-              >
-                -
-              </Button>
-              <h6 className="contador">{counter}</h6>
-              <Button
-                variant="contained"
-                color="success"
-                className="more"
-                onClick={onClickCounterM}
-              >
-                +
-              </Button>
-              <Button
-                variant="outlined"
-                sx={{ marginLeft: 5, padding: 0, height: 50, padding: 2 }}
-                onClick={onClickCart}
-              >
-                Agregar al carrito
-              </Button>
-            </div> : 
-            <div className="btns">
-                <Link to="/cart">
-                <Button
-                variant="outlined"
-                sx={{ height: 50, padding: 2 }}
-                
-              >
-                Terminar compra
-              </Button>
-              </Link>
+              {!add ? (
+                <div className="purchseBtns">
+                  <div className="counterContainer">
+                    <Button
+                      variant="outlined"
+                      color="error"
+                      className="minus"
+                      onClick={onClickCounterL}
+                    >
+                      <h4>
+                      -
+                      </h4>
+                    </Button>
+                    <h6 className="contador">{counter}</h6>
+                    <Button
+                      variant="contained"
+                      color="success"
+                      className="more"
+                      onClick={onClickCounterM}
+                    >
+                      <h4>
+                      +
+                      </h4>
+                    </Button>
+                  </div>
+                  <Button
+                    variant="outlined"
+                    sx={{ padding: 0, height: 60, marginTop: 2 }}
+                    onClick={onClickCart}
+                  >
+                    <h3 className="cartBtn"> 
+                    Agregar al carrito
+                    </h3>
+                  </Button>
+                </div>
+              ) : (
+                <div className="btns">
+                  <Link to="/cart">
+                    <Button variant="outlined" sx={{ height: 50 }}>
+                      <h3 className="finishBuy">
+                      Terminar compra
+                      </h3>
+                    </Button>
+                  </Link>
+                </div>
+              )}
             </div>
-            }
-
-          </div>
-        </CardContent>
-      </Box>
-      <CardMedia
-        component="img"
-        image={data.img}
-        alt={data.brand}
-        className="cardMedia"
-      />
+          </CardContent>
+        </Box>
+      </div>
     </Card>
   );
 };

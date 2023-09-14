@@ -6,22 +6,22 @@ import CartWidget from "../cartWidget";
 
 
 function Navbar() {
-    return (<nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+    return (<nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
             <Logoimg />
-            <Link to="/" style={{ textDecoration: 'none' }}><a class="navbar-brand" href="#">Visual Check✔️</a></Link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <Link to="/" style={{ textDecoration: 'none' }}><h3 className="navbar-brand" href="#">Visual Check✔️</h3></Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul className="navbar-nav">
+                        <li className="nav-item dropdown">
                         
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <h3 className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Productos
-                        </a>
+                        </h3>
                         
-                        <ul class="dropdown-menu">
+                        <ul className="dropdown-menu">
                             <Link to="/Category/Ray-Ban" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Ray-Ban</li></Link>
                             <Link to="/Category/Oakley" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Oakley</li></Link>
                             <Link to="/Category/Gucci" style={{ textDecoration: 'none' }} className="link"><li className="dropdown-item">Gucci</li></Link>
@@ -30,17 +30,17 @@ function Navbar() {
                         </ul>
                     </li>
                     <Link to="/Soporte" style={{ textDecoration: 'none', color: 'white' }} className="link">
-                        <li class="nav-item">
+                        <li className="nav-item">
                             Soporte
                         </li>
                     </Link>
                     <Link to="/Contacto" style={{ textDecoration: 'none', color: 'white' }} className="link">
-                        <li class="nav-item">
+                        <li className="nav-item">
                             Contacto
                         </li>
                     </Link>
                     <Link to="/Cart" style={{ textDecoration: 'none', color: 'white' }} className="link">
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <CartWidget />
                         </li>
                     </Link>

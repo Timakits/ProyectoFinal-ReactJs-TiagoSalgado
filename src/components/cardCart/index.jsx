@@ -23,13 +23,27 @@ const CardCart = () => {
       {cart.map((product) => {
                 total(product.price * product.counter)
         return (
-          <Card sx={{ display: 'flex' , marginTop: "5%"}} key={product.id}>
+          <Card  sx={{
+            display: 'flex',
+            marginTop: '5%',
+            flexDirection: 'column',
+            alignItems: 'center', 
+          }} key={product.id}>
           <CardMedia
             component="img"
-            sx={{ width: 151, height: 151 }}
+            sx={{
+              display: 'flex',
+              marginTop: '5%',
+              flexDirection: 'column',
+              alignItems: 'center', 
+            }}
             image={product.img}
           />
-          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+          <Box  sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center', 
+            }}>
             <CardContent sx={{  }}>
               <Typography component="div" variant="h5">
                 {product.model} {product.brand}
@@ -42,15 +56,32 @@ const CardCart = () => {
               </Typography>
             </CardContent>
           </Box>
-          <Box sx={{display:"flex", width:"42%", flexDirection:"column", alignItems:"end"}}>
-          <Typography component="div" variant="h3" sx={{marginTop:"5%", marginRight:"5%"}} >
+          <Box  sx={{
+              display: 'flex',
+              width: '100%', 
+              justifyContent: 'center', 
+              alignItems: 'center', 
+            }}>
+              <div className="TotalAndBtn">
+                <div>
+          <Typography component="div" variant="h3"  sx={{
+              display: 'flex',
+              width: '100%', 
+              justifyContent: 'center', 
+              alignItems: 'center', 
+              color:"bisque"
+            }} >
                 ${product.price * product.counter}
               </Typography>
+              </div>
+              <div>
           <IconButton>
-            <h3 onClick={() => removeItem(product.id)}>
+            <h3  className="deleteIcon" onClick={() => removeItem(product.id)}>
             Eliminar<DeleteIcon/>
             </h3>
           </IconButton>
+          </div>
+          </div>
           </Box>
         </Card>
         );

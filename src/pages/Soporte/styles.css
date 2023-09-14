@@ -4,14 +4,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 p{
     max-width: 50%;
-    font-size: 25px;
+    font-size: 120%;
 }
 ul{
     max-width: 50%;
-    font-size: 25px;
+    font-size: 100%;
 }
 h2{
     margin-top: 20px;

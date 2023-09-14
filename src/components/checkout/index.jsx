@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import "./styles.css"
 
 //Components
 import CheckOutForm from '../checkoutForm'
@@ -27,10 +28,9 @@ const Checkout = () => {
             const objOrder = {
                 comprador: {name, phone, email},
                 items: cart,
-                total: total,
-                date: Timestamp.fromDate(new Date())
+                total: total()
             }
-
+            console.log(objOrder)
             const batch = writeBatch(db)
 
             const outOfStock = []
@@ -78,15 +78,14 @@ const Checkout = () => {
 
     if (loading) {
         return 
-        <h1>Su orden esta siendo generada, espere un momento.</h1>
+        <h1 className='order'>Su orden esta siendo generada, espere un momento.</h1>
     }
     if (orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>
+        return <h1 className='order'>El id de su orden es: {orderId}</h1>
     }
 
     return (
         <div>
-            <h2>Checkout</h2>
             <CheckOutForm onConfirm={createOrder}/>
         </div>
     )

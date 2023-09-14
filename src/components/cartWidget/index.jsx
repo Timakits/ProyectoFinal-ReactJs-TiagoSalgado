@@ -6,7 +6,7 @@ import { CartContext } from '../../context/cartContext'
 const CartWidget = () => {
   const {cart} = useContext(CartContext)
   return (
-    <div><i class="fa-solid fa-cart-shopping"></i>{cart.length}</div>
+    <div><i className="fa-solid fa-cart-shopping"></i>{cart.length}</div>
   )
 }
 
