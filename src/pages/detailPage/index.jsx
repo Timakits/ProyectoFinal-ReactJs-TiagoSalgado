@@ -2,29 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./styles.css";
 //COMPONENETS
-import CardProduct from "../../components/cardProduct";
 import CardDetail from "../../components/cardDetail";
 
 //Firebase
-import { collection, query,  getDocs } from "firebase/firestore";
+import { collection, query, getDocs } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
 
   let { Id } = useParams();
-
-  // useEffect(() => {
-  //     const selectedProduct = Stock.find(item => item.id == Id);
-  //     if (selectedProduct) {
-  //         setTimeout(() => {
-  //             setProduct(selectedProduct);
-  //         }, 1000);
-  //     } else {
-  //         console.log("Producto no encontrado");
-  //     }
-  // }, [Id]);
-
   useEffect(() => {
     const getProduct = async () => {
       //firebase call

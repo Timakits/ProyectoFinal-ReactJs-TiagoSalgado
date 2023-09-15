@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "proyectofinal-salgado",
   storageBucket: "proyectofinal-salgado.appspot.com",
   messagingSenderId: "605585032695",
-  appId: "1:605585032695:web:87d883b4b3acbc77ecdaf2"
+  appId: "1:605585032695:web:87d883b4b3acbc77ecdaf2",
 };
 
 // Initialize Firebase

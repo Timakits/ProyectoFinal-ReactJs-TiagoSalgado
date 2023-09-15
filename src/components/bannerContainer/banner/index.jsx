@@ -1,5 +1,4 @@
 import "./styles.css";
-import banner from "../../../assets/img/Banner.jpg";
 
 const Banner = () => {
   return (
@@ -12,7 +11,9 @@ const Banner = () => {
           </h2>
         </div>
       </div>
-      <div className="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+      <div className="arrow">
+        <i className="fa-solid fa-chevron-down"></i>
+      </div>
     </>
   );
 };

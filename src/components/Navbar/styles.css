@@ -1,53 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,300&display=swap");
 
 /*  font-family: 'Mitr', sans-serif; 
     font-family: 'Kanit', sans-serif;*/
 
-.collapse{
-    display: flex;
-    justify-content: end;
-    margin-right: 2%;
+.collapse {
+  display: flex;
+  justify-content: end;
+  margin-right: 2%;
 }
 
-.navbar{
-    font-size: 25px;
-    color: white;
-    background-color: #333;
+.navbar {
+  font-size: 25px;
+  color: white;
+  background-color: #1b1e1f;
 }
-.category{
-    background-color: rgb(152, 116, 72);
-    text-decoration: none;
-}
-
-.navbar-brand{
-    font-size: 35px;
+.category {
+  background-color: rgb(152, 116, 72);
+  text-decoration: none;
 }
 
-.nav-link{
-    color: white;
-}
-.nav-item :hover{
-    color: bisque;
-    transform: scaleY(25px);
-    transition: 0.5s ease;
-}
-.link :hover{
-    color: bisque;
-    transform: scaleY(25px);
-    transition: 0.5s ease;
+.navbar-brand {
+  font-size: 35px;
+  color: white;
 }
 
-.link{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    padding: 5px;
+.nav-link {
+  color: white;
+}
+.dropdown-menu {
+  background-color: #1b1e1f;
+}
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover {
+  background-color: #333;
+}
+.nav-item :hover {
+  color: bisque;
+  transform: scaleY(25px);
+  transition: 0.5s ease;
+}
+.link :hover {
+  color: bisque;
+  transform: scaleY(25px);
+  transition: 0.5s ease;
+}
+
+.link {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
 }
 
 @media only screen and (min-width: 720px) and (max-width: 1200px) {
-
-    .collapse{
-        margin-right: 20%;
-    }
- }
+  .collapse {
+    margin-right: 20%;
+  }
+}

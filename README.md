@@ -20,4 +20,9 @@ tiagosalgado1110@gmail.com
 
 ### .env 
 
+
 i dont include it in gitignore because i want you to see it how i configured 
+
+### Extension
+
+-Prettier

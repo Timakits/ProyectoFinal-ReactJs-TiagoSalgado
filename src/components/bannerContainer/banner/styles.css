@@ -1,83 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap");
 
-.bannerContainer{
-    display: block;
-    height: 700px;
-    width: 100%;
-    background-image: url(../../../assets/img/Banner.jpg) ;
-    background-size: cover ;
-    background-attachment: fixed;
-}
-
-.proverbio{
-    position: absolute ;
-    display: block;
-    background-color: #33333344;
-    margin: 20px;
-    padding: 15px;
-    color: rgb(255, 255, 255);
-    border: solid 2px #181a1b;
-    font-size: 40px;
-    width: 45%;
-    text-align: center;
+.bannerContainer {
+  display: block;
+  height: 700px;
+  width: 100%;
+  background-image: url(../../../assets/img/Banner.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-h2{
-    font-size: 35px;
-    font-style: oblique;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 100;
+.proverbio {
+  position: absolute;
+  display: block;
+  background-color: #33333344;
+  margin: 20px;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  border: solid 2px #181a1b;
+  font-size: 40px;
+  width: 45%;
+  text-align: center;
 }
 
-.frase{
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 65%;
-    color: bisque;
-    font-family: 'Kanit', sans-serif;
+h2 {
+  font-size: 35px;
+  font-style: oblique;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
 }
 
-.frase2{
-    font-size: 65%;
-}
-.fa-chevron-down{
-    margin-top: 20px;
-    font-size: 250%;
-    color: bisque;
-}
-.arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.frase {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 65%;
+  color: bisque;
+  font-family: "Kanit", sans-serif;
 }
 
+.frase2 {
+  font-size: 65%;
+}
+.fa-chevron-down {
+  margin-top: 20px;
+  font-size: 250%;
+  color: bisque;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 719px) {
-    .bannerContainer{
-        display: block;
-        height: 280px;
-        width: 100%;
-        background-image: none ;
-
-    }
-    .proverbio{
-        width:90%;
-    }
- }
- @media only screen and (min-width: 720px) and (max-width: 1255px) {
-
-    .bannerContainer{
-        display: block;
-        height: 280px;
-        width: 100%;
-        background-image: url(../../../assets/img/Banner.jpg) ;
-        background-size: cover ;
-        background-attachment: scroll;
-
-    }
-    .proverbio{
-        width:40%;
-        font-size: 180%;
-    }
- }
+  .bannerContainer {
+    display: block;
+    height: 280px;
+    width: 100%;
+    background-image: none;
+  }
+  .proverbio {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1255px) {
+  .bannerContainer {
+    display: block;
+    height: 280px;
+    width: 100%;
+    background-image: url(../../../assets/img/Banner.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .proverbio {
+    width: 40%;
+    font-size: 180%;
+  }
+}

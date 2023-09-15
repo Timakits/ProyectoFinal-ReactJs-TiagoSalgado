@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./styles.css";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
@@ -22,7 +21,7 @@ const Cart = () => {
       <div className="cartContainer">
         <div className="btns">
           <IconButton onClick={clearCart}>
-            <h3>
+            <h3 className="vaciar">
               Vaciar carrito <DeleteIcon />
             </h3>
           </IconButton>
@@ -41,8 +40,19 @@ const Cart = () => {
         </div>
         {!cart.length == 0 ? (
           <>
-          <div className="total"><h3>Total en el carrito: <span className="number"> ${total()}</span></h3></div>
-          <div className="btnCheack"><Link to='/Checkout' style={{textDecoration:"none", color:"bisque", margin:20}}>Finalizar Compra</Link></div>
+            <div className="total">
+              <h3>
+                Total en el carrito: <span className="number"> ${total()}</span>
+              </h3>
+            </div>
+            <div className="btnCheack">
+              <Link
+                to="/Checkout"
+                style={{ textDecoration: "none", color: "bisque", margin: 20 }}
+              >
+                Finalizar Compra
+              </Link>
+            </div>
           </>
         ) : null}
       </div>

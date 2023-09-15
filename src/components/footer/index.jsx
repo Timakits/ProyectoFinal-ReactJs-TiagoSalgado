@@ -1,16 +1,15 @@
-import "./styles.css"
+import "./styles.css";
 
 export const Footer = () => {
-    return (
+  return (
     <>
-    <div className="container footer">
+      <div className="container footer">
         <div className="row">
-            <div className="col-12 footer">© 2023 handmade by Tiago salgado</div>
+          <div className="col-12 footer">© 2023 handmade by Tiago salgado</div>
         </div>
-    </div>
+      </div>
     </>
-    );
+  );
 };
 
-
-export default Footer
+export default Footer;

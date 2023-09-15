@@ -1,18 +1,20 @@
 import * as React from "react";
+import "./styles.css";
+import { useState } from "react";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+
+//MUI
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
-import "./styles.css";
-import { useState } from "react";
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+//Context
 import { CartContext } from "../../context/cartContext";
+//SweetAlert
 import Swal from "sweetalert2";
-
-
 
 const CardDetail = ({ data }) => {
   const [counter, setCounter] = useState(1);
@@ -60,7 +62,7 @@ const CardDetail = ({ data }) => {
         flexDirection: "column",
       }}
     >
-      <div className="cardContainer">
+      <div className="cardContainer" style={{ backgroundColor: "#1B1E1F" }}>
         <CardMedia
           component="img"
           image={data.img}
@@ -102,9 +104,7 @@ const CardDetail = ({ data }) => {
                       className="minus"
                       onClick={onClickCounterL}
                     >
-                      <h4>
-                      -
-                      </h4>
+                      <h4>-</h4>
                     </Button>
                     <h6 className="contador">{counter}</h6>
                     <Button
@@ -113,9 +113,7 @@ const CardDetail = ({ data }) => {
                       className="more"
                       onClick={onClickCounterM}
                     >
-                      <h4>
-                      +
-                      </h4>
+                      <h4>+</h4>
                     </Button>
                   </div>
                   <Button
@@ -123,18 +121,14 @@ const CardDetail = ({ data }) => {
                     sx={{ padding: 0, height: 60, marginTop: 2 }}
                     onClick={onClickCart}
                   >
-                    <h3 className="cartBtn"> 
-                    Agregar al carrito
-                    </h3>
+                    <h3 className="cartBtn">Agregar al carrito</h3>
                   </Button>
                 </div>
               ) : (
                 <div className="btns">
                   <Link to="/cart">
                     <Button variant="outlined" sx={{ height: 50 }}>
-                      <h3 className="finishBuy">
-                      Terminar compra
-                      </h3>
+                      <h3 className="finishBuy">Terminar compra</h3>
                     </Button>
                   </Link>
                 </div>

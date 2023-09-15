@@ -6,16 +6,8 @@ import { useParams } from "react-router-dom";
 //COMPONENT
 import ItemList from "../../components/itemList";
 
-//Json
-import Stock from "./Products.json";
-
 //Firebase
-import {
-  collection,
-  query,
-  where,
-  getDocs,
-} from "firebase/firestore";
+import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
 
 const ItemListContainer = () => {
@@ -40,20 +32,14 @@ const ItemListContainer = () => {
         filterProducts = docs;
         setisLoading(true);
       } else {
-        filterProducts = docs.filter(
-          (element) => element.brand === CategoryId
-          );
-          setisLoading(true);
-        }
-        setProducts(filterProducts);
-      };
-      getProducts();
-      
+        filterProducts = docs.filter((element) => element.brand === CategoryId);
+        setisLoading(true);
+      }
+      setProducts(filterProducts);
+    };
+    getProducts();
   }, [CategoryId]);
 
-
-
-  ;
   return (
     <div className="productsContainer">
       {!CategoryId && <BannerContainer />}

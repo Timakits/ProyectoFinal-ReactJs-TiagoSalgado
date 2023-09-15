@@ -3,6 +3,7 @@
   font-size: 20px;
   padding: 15px;
   padding-top: 5%;
+  color: white;
 }
 
 .cardContent {
@@ -16,7 +17,9 @@
 .Name {
   font-size: 50px;
 }
-
+.detalle {
+  color: white;
+}
 .btns {
   display: flex;
   justify-content: center;
@@ -25,7 +28,7 @@
   max-height: 50%;
 }
 .cartBtn {
-    padding: 10px;
+  padding: 10px;
 }
 .Precio {
   color: bisque;
@@ -131,13 +134,12 @@
   }
 }
 
-@media only screen and (min-width: 1630px){
-    .purchseBtns {
-        flex-direction: row;
-        margin-top: 30%;
-      }
-      .counterContainer{
-        margin-right: 10%;
-      }
-    
+@media only screen and (min-width: 1630px) {
+  .purchseBtns {
+    flex-direction: row;
+    margin-top: 30%;
+  }
+  .counterContainer {
+    margin-right: 10%;
+  }
 }
